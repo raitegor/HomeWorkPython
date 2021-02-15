@@ -3,3 +3,4 @@ list_1=['инженер-конструктор Игорь', 'главный бу
 for i in list_1:
     a = i.rsplit (' ', 1)[1].capitalize()
     print(f'Привет {a}')
+
