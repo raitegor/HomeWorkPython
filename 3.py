@@ -19,4 +19,6 @@ with open('hobby.csv', 'r', encoding='utf-8') as b:
 for i in itertools.zip_longest(peoples, hobbys):
     clients[i[0]] = i[1]
 
-print(clients)
+with open('clients.csv', 'w', encoding='utf-8') as f:
+    for i in clients.items():
+        f.write(str(i) + '\n')

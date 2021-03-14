@@ -13,6 +13,3 @@ with open('users.csv', 'r', encoding='utf-8') as f:
             else:
                 clients[i[0][:-1]] = i[1]
 
-
-
-print(clients)
