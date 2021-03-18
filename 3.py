@@ -1,15 +1,9 @@
+import os
+import shutil
 
-my_dict = {}
+def shufl_dir():
+    for way, direct, files in os.walk('project'):
+       shutil.copytree('project', os.path.join('project', 'temp'))
+       for i in direct:
+           shutil.rmtree(os.path.join('project', i))
 
-def thesaurus(*name):
-    name = list(name)
-    for i in name:
-        if i[:1] in my_dict:
-            my_dict[i[:1]].append(i)
-        else:
-            my_dict.setdefault(i[:1], [i])
-
-thesaurus('Валера', 'Антон', 'Кира', 'Витя')
-
-
-print(my_dict)
