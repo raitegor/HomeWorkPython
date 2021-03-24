@@ -7,7 +7,7 @@ class Matrix:
         for i in range(len(self.p_1)):
             c.append([])
             for j in range(len(self.p_1[0])):
-                MyClass(c[i].append(self.p_1[i][j] + other.p_1[i][j]))
+                Matrix(c[i].append(self.p_1[i][j] + other.p_1[i][j]))
         return c
 
     def __str__(self):
